@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600;1,800&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'poppins'sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+}
+
+header{
+  width: 100%;
+  background-color: #f0f0f0;
+  /* تثبيت العنصر وعدم اختافئه مع السكرول */
+  position: fixed;
+  /* جعل العنصر ظاهر فوق باقي العناصر */
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 200px;
+  align-items: center;
+
+}
+
+.logo{
+  text-decoration: none;
+  font-weight: 700;
+  /* حروف الكلمه 
+  text-transform
+  1-uppercase = كل الحروف كابتل او كبيره
+  2-capitalize = او حرف و الاسماء كبيره
+  3-lowercase = كل الحروف صغيره
+  */
+  text-transform: uppercase;
+  color: #3a6cf4;
+  /* em = difolt = 16 */
+  font-size: 1.8em;
+  font-weight: 700;
+
+}
+
+.nav a{
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding-left: 30px;
+  color: #3a6cf4;
+}
+
+.nav a:hover{
+  color: rebeccapurple;
+}
+
+section{
+  padding: 100px 200px;
+}
+.mun1{
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(imgs/backg.jpg), no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* بيخلي الصوره ثابته لما اعمل اسكرول */
+  background-attachment: fixed;
+}
+
+.mun1 h2{
+  color: white;
+  font-size: 1.4em;
+  font-weight: 500;
+
+}
+
+.mun1 h2 span{
+  display: inline-block;
+  margin-top: 10px;
+  color: #3a6cf4;
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.mun1 h3{
+  color: #fff;
+  font-size: 2em;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.mun1-but{
+  background-color: rebeccapurple;
+  padding: .9375em 2.1875em;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 700;
+  display: inline-block;
+  transition: .7s ease;
+  letter-spacing: 1px;
+}
+
+.mun1-but:hover{
+  background-color: #3a6cf4;
+  transform: scale(1.1);
+}
+
+.icon a{
+  color: white;
+  font-size: 1.7em;
+  padding-right: 30px;
+}
+
+.icon a:hover{
+  color: #3a6cf4;
+}
+
+.taitl{
+  display: flex;
+  justify-content: center;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: #3a6cf4;
+}
+
+.contect{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.card{
+  background-color: white;
+  width: 21.25em;
+  box-shadow: 0 5px 21px rgba(1, 1, 0, 15%);
+  margin: 30px;
+  transition: .7s ease;
+  padding: 21px;
+}
+
+.card:hover{
+  transform: scale(1.1);
+}
+
+.icon2{
+  text-align: center;
+  font-size: 6em;
+  color: #3a6cf4;
+  margin-bottom: 10px;
+}
+
+.info h3{
+  color: #3a6cf4;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.info p{
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.project{
+  background-color: #090A5D;
+}
+
+
+
+img{
+  width: 100%;
+}
+
+.project .contect{
+  margin: 30px;
+}
+
+.card2{
+  background-color: #fff;
+  border: #fff 1px solid;
+  min-height: 14em;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: .7s ease;
+}
+
+.card2:hover{
+  transform: scale(1.1);
+}
+
+.card2 .img:hover {
+  opacity: .9;
+
+}
+
+.pro-info{
+  letter-spacing: 2px;
+}
+
+.pro-info p{
+  padding: 10px;
+  font-weight: 550;
+}
+.pro-info .link{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.card3{
+  background-color: white;
+  width: 21.25em;
+  box-shadow: 0 5px 21px rgba(1, 1, 0, 15%);
+  margin: 30px;
+  transition: .7s ease;
+  padding: 21px;
+  color: #090A5D;
+  text-align: center;
+  transition: .7s ease;
+}
+
+.icon3{
+  margin: 30px;
+  font-size: 3em;
+  
+}
+
+.card3 p{
+  font-size: 1.5em;
+}
+
+.card3:hover{
+  transform: scale(1.1);
+}
